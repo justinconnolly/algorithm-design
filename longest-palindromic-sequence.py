@@ -7,6 +7,7 @@ def palindromic_sequence():
 Strategy: L(i,j) is length of longest palindromic sequence x[i,...,j] i leq j
 
 """
+# Non-memoized
 def L(x,i,j):
     if i == j:
         return 1
@@ -20,7 +21,7 @@ def L(x,i,j):
     else:
         return max( L(x, i + 1, j),
                     L(x, i, j - 1))
-
+# Memoized
 def L_dp(x, i, j, dp):
     if f"{i}-{j}" in dp:
         return dp[f"{i}-{j}"]
