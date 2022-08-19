@@ -1,2 +1,2 @@
 # algorithm design
-Collection algorithms for practice and fun
+Collection of algorithms for practice and fun
